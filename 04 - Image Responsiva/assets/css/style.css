@@ -1,0 +1,17 @@
+img {
+    max-width: 100%; /*ja deixa max-width: 100%; para todas as imagens*/
+}
+
+.image-container1 {
+    border: 2px solid red;
+    height: 800px;
+    width: 100%;
+
+    background-image: url('../img/natureza-1140x512.jpg');
+}
+
+@media screen and (max-width: 690px) {
+    .image-container1 {
+        background-image: url('../img/image2.jpg');
+    }
+}

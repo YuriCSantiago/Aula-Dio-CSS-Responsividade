@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px repeat(3, 300px);/*Primeira linha tem 100px e depois 3 linhas de 300px*/
+    grid-template-areas: 
+    "header header header header" /*Ocupa as 4 colunas*/
+    "navbar main-content main-content main-content"/*Menu a esquerda ocupando uma coluna e o main-content ocupando três colunas*/
+    "navbar content-1 content-2 content-3"
+    "navbar footer footer footer"
+    ;
+}
+
+header, nav, section, footer {
+    padding: 20px;
+}
+
+header{
+    background-color: lightblue;
+    grid-area: header;
+}
+
+nav {
+    background-color: lightgreen;
+    grid-area: navbar;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 8px;
+}
+
+li a {
+    color: black;
+}
+
+footer {
+    background-color: lightpink;
+    grid-area: footer;
+}
+
+.main-section-content {
+    background-color: lightsalmon;
+    grid-area: main-content;
+}
+
+.content-1 {
+    background-color: paleturquoise;
+    grid-area: content-1;
+}
+
+.content-2 {
+    background-color: papayawhip;
+    grid-area: content-2;
+}
+
+.content-3 {
+    background-color: plum;
+    grid-area: content-3;
+}
+
